@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    color: #fff;
+}
+
+canvas {
+    display: block;
+}
+
+body {
+    font-family: Helvetica;
+    background-color: #000;
+}
+
+/* Оформление меню */
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    height: 50px;
+}
+
+nav ul li {
+    display: flex;
+    /* Делаем его флекс-контейнером */
+    justify-content: center;
+    /* Выравниваем элементы по горизонтали по центру */
+    align-items: center;
+    /* Выравниваем элементы по вертикали по центру */
+    height: 100%;
+}
+
+nav ul li a {
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li:hover {
+    background-color: rgb(91, 91, 91);
+}
+
+p {
+    color: #fff;
+    text-align: center;
+}
+
+#sphereContent {
+    text-align: center;
+}
+
+input {
+    color: #fff;
+    border-style: solid;
+    border-color: #fff;
+    background-color: #000;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    height: 30px;
+    width: 10px;
+  }

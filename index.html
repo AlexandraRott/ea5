@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Scenes</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" id="shapes">cilinder and cone</a></li>
+                <li><a href="#" id="sphere">sphere</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p>press ← or → to rotate the scene</p>
+    <div id="shapesContent" style="display: block;">
+        <div id="shapesContainer"></div>
+    </div>
+    <div id="sphereContent" style="display: none;">
+        <div id="depthControl">
+            <label for="depthInput">recursion depth:</label>
+            <input type="number" id="depthInput" value="3" min="1" max="10">
+        </div>
+        <div id="sphereContainer"></div>
+    </div>
+
+    <script src="https://threejs.org/build/three.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
